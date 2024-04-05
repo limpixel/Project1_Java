@@ -12,13 +12,13 @@ import java.util.Scanner;
  *
  * @author ASUS
  */
-public class LoginUser {
+class Login {
     private String username;
     private String email;
     private String password;
     private List<String> loginHistory;
 
-    public LoginUser() {
+    public Login() {
         loginHistory = new ArrayList<>();
     }
 
@@ -63,9 +63,21 @@ public class LoginUser {
             System.out.println(log);
         }
     }
+}
 
+class PremiumUser extends Login{
+    // Override method untuk menambahkan fitur premium
+    @Override
+    public void registerCar() {
+        super.registerCar(); // Panggil method registerCar dari kelas induk
+        System.out.println("Fitur premium: pengguna premium dapat mengatur preferensi mobil.");
+    }
+}
+
+public class LoginUser {
     public static void main(String[] args) {
-        LoginUser app = new LoginUser();
+        Login app = new PremiumUser(); // Membuat objek PremiumUser
+
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Masukkan email: ");
