@@ -1,9 +1,9 @@
 package DEV_PROJECT;
 
 abstract class LayananMobil {
-    // Metode untuk melakukan layanan pada mobil
+    // Metode abstrak untuk layanan mobil
     public abstract void layananMobil();
 
-    // Metode untuk mendapatkan harga layanan
+    // Metode abstrak untuk mendapatkan harga layanan
     public abstract int getHargaLayanan();
 }

@@ -13,10 +13,9 @@ import java.util.Scanner;
  * @author ASUS
  */
 class Login {
-    private String username;
     private String email;
     private String password;
-    private List<String> loginHistory;
+    private final List<String> loginHistory;
 
     public Login() {
         loginHistory = new ArrayList<>();
