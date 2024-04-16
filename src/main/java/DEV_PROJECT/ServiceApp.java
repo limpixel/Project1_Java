@@ -80,7 +80,7 @@ class KilometerBasedService extends LayananMobil {
     private int hargaFilterOli;
     private int hargaBusi;
     private int hargaKampasRem;
-
+    
     public KilometerBasedService(int kilometer) {
         this.kilometer = kilometer;
         // Set harga-harga layanan
@@ -130,10 +130,10 @@ class KilometerBasedService extends LayananMobil {
 }
 
 // Implementasi history service mobil
-class RiwayatLayanan {
+class RiwayatLayanang {
     private ArrayList<String> daftarRiwayat;
 
-    public RiwayatLayanan() {
+    public void RiwayatLayanan() {
         daftarRiwayat = new ArrayList<>();
     }
 
@@ -150,15 +150,18 @@ class RiwayatLayanan {
 }
 
 public class ServiceApp {
-    public static void main(String[] args) {
+    
+ 
+    public static void SerOpt() {
         Scanner scanner = new Scanner(System.in);
         int totalHarga = 0;
 
         // Riwayat layanan
         RiwayatLayanan riwayatLayanan = new RiwayatLayanan();
-
+        
         // Menu loop
-        while (true) {
+        int status = 1;
+        while (status==1) {
             // Menampilkan menu layanan
             System.out.println("\nMenu Layanan Mobil:");
             System.out.println("1. Service ");
@@ -194,9 +197,11 @@ public class ServiceApp {
                     break;
                 case 4:
                     // Keluar dari program
-                    System.out.println("Terima kasih!");
-                    scanner.close();
-                    System.exit(0);
+                    //System.out.println("Terima kasih telah melakukan service di Gas Station");
+                    //scanner.close();
+                    //break;
+                    //System.exit(0);
+                    status=0;
                 default:
                     System.out.println("Pilihan tidak valid!");
                     break;

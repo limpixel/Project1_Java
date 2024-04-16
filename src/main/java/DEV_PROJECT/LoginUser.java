@@ -12,12 +12,13 @@ import java.util.Scanner;
  *
  * @author ASUS
  */
-class Login {
+class Login1 {
     private String email;
     private String password;
-    private final List<String> loginHistory;
+    private  List<String> loginHistory;
+    private String Service ;
 
-    public Login() {
+    public void Login() {
         loginHistory = new ArrayList<>();
     }
 
@@ -64,7 +65,7 @@ class Login {
     }
 }
 
-class PremiumUser extends Login{
+class PremiumUser1 extends Login{
     // Override method untuk menambahkan fitur premium
     @Override
     public void registerCar() {
@@ -73,8 +74,17 @@ class PremiumUser extends Login{
     }
 }
 
+
+///class ServiceApp1 {
+//    public static void ServiceApp1()
+//    {
+//       //Service1 Serv1 = new ServiceApp();   
+//         ServiceApp.SerOpt();// calling B class's method
+//    }
+//}
 public class LoginUser {
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
+    public static void main() {
         Login app = new PremiumUser(); // Membuat objek PremiumUser
 
         Scanner sc = new Scanner(System.in);
@@ -89,8 +99,13 @@ public class LoginUser {
 
         // Tampilkan riwayat login
         app.printLoginHistory();
-
+        //ServiceApp.SerOpt();
+        //TransactionGasStation.main();
+        
+        //Service Ser1 = new ServiceApp1();
+        //Service srv = new ServiceApp1();
         // Tutup scanner setelah digunakan
-        sc.close();
+        //sc.close();
     }
 }
+

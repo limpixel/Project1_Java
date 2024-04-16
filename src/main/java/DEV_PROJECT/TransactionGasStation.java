@@ -11,7 +11,8 @@ import java.util.Scanner;
  * @author ASUS
  */
 public class TransactionGasStation {
-     public static void main(String[] args) {
+     //public static void main(String[] args) {
+    public static void main() {
         Scanner input = new Scanner(System.in);
 
         // Variable needed
@@ -170,6 +171,9 @@ public class TransactionGasStation {
         }
 
         input.close();
+        System.out.println("Terima Kasih telah melakukan Service dan Pengisian Bahan Bakar di Gas Stattion ");
+
+        System.exit(0);
     }
 
 }

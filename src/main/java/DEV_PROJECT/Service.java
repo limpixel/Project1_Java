@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author ASUS
  */
 // Implementasi Pre-order service car
-class KilometerBasedService extends LayananMobil {
+class KilometerBasedService1 extends LayananMobil {
     private int kilometer;
     private int biayaJasaService;
     private int hargaFilterUdara;
@@ -23,7 +23,7 @@ class KilometerBasedService extends LayananMobil {
     private int hargaBusi;
     private int hargaKampasRem;
 
-    public KilometerBasedService(int kilometer) {
+    public KilometerBasedService1(int kilometer) {
         this.kilometer = kilometer;
         // Set harga-harga layanan
         this.biayaJasaService = 50000;
