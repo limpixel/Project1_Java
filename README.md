@@ -1,7 +1,6 @@
 ## Members : 
-:man_scientist: <a href="https://github.com/limpixel">Abdul Halim</a> <br/>
 :man_scientist: <a href="https://github.com/Funx3r">Rangga Fabiano</a> <br/>
-:man_scientist: <a href="https://github.com/saadanadwa">Saadan Adwa</a> 
+:man_scientist: <a href="https://github.com/saadanadwa">Nail Rizqi</a> 
 
 
 ## Bahasa Yang Digunakan : 
